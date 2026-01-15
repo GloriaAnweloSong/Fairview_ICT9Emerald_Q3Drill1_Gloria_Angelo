@@ -30,11 +30,11 @@
 -->
 <h4 class="text-center">Answers:</h4>
     <div class="text-center">
-        <button type="button" class="btn btn-warning" onclick="document.getElementById('rizzult').innerHTML='The answer is: ' + s1g + ' J';">Kinetic Energy</button>
+        <button type="button" class="btn btn-warning" onclick="document.getElementById('rizzult').innerHTML='The answer is (200 kg (4 m/s)^2) / 2 = ' + s1g + ' J';">Kinetic Energy</button>
         <!--(200 kg (4 m/s)^2) / 2 = 1600 J -->
-        <button type="button" class="btn btn-warning" onclick="document.getElementById('rizzult').innerHTML='The answer is: ' + s2g + ' J';">Potential Energy</button>
+        <button type="button" class="btn btn-warning" onclick="document.getElementById('rizzult').innerHTML='The answer is (200 kg)(9.8 m/s^2)(15 m) = ' + s2g + ' J';">Potential Energy</button>
         <!--(200 kg)(9.8 m/s^2)(15m) = 29400 J -->
-        <button type="button" class="btn btn-warning" onclick="document.getElementById('rizzult').innerHTML='The answer is: ' + sigmaf + ' J';">Total Mechanical Energy</button>
+        <button type="button" class="btn btn-warning" onclick="document.getElementById('rizzult').innerHTML='The answer is 29400 J + 1600 J = ' + sigmaf + ' J';">Total Mechanical Energy</button>
         <!--29400 J + 1600 J = 31000 J -->
     </div>
 
@@ -42,8 +42,8 @@
 
     <script>
         var sigma$ = "The Sigma Calculator";
-        var s1g = 1600;
-        var s2g = 29400;
+        var s1g = (200*((4)**2)) / 2;
+        var s2g = 200*9.8*15;
         var sigmaf = s1g + s2g
 
         document.getElementById('s1').innerHTML = sigma$;
@@ -51,4 +51,3 @@
 
 </body>
 </html>
-
